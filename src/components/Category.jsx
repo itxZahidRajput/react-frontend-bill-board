@@ -4,7 +4,7 @@ export default function Category() {
     return (
         <section className="category">
             <div className="category-title">
-                <h3>Choose Category</h3>
+                <h3>Choose Categories</h3>
                 <p>Take a look at the best Billboard Category</p>
             </div>
             <div className="category-block">
