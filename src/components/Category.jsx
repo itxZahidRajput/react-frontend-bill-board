@@ -2,13 +2,13 @@ import React from "react"
 
 export default function Category() {
     return (
-        <div className="category">
+        <section className="category">
             <div className="category-title">
                 <h3>Choose Category</h3>
                 <p>Take a look at the best Billboard Category</p>
             </div>
             <div className="category-block">
-                <div className="category-card">
+                <div className="category-card category-card-active">
                     <img src="img1.png" />
                     <p>Mobile Billboards</p>
                 </div>
@@ -52,6 +52,6 @@ export default function Category() {
                     <p>360 Billboards</p>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

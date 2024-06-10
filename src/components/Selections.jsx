@@ -2,14 +2,14 @@ import React from 'react'
 
 export default function Selections() {
     return (
-        <div className='selection'>
+        <section className='selection'>
             <div className='selection-header'>
                 <div className='selection-title'>
                     <h3>The very best of our Selections</h3>
                     <p>Take a look at the best Billboard in your Area</p>
                 </div>
                 <div className=''>
-                    <a href='' >Select More &gt;</a>
+                    <a href='#' >Select More &gt;</a>
                 </div>
             </div>
             <div className='selection-block'>
@@ -174,6 +174,6 @@ export default function Selections() {
                 </div>
             </div>
 
-        </div>
+        </section>
     )
 }
