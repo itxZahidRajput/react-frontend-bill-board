@@ -31,7 +31,7 @@ function Section() {
 
                         </div>
                         <div className='inner'>
-                            <span>math</span>
+                            <span>Month</span>
                             <img className='vector' src="Vector.png" alt="" />
                         </div>
                     </div>
@@ -45,7 +45,7 @@ function Section() {
                         </div>
                         <div className='inner'>
                             <img src="search.png" alt="" />
-                            <span > search</span>
+                            <span> Search</span>
                         </div>
                     </div>
                 </div>
