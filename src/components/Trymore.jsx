@@ -1,5 +1,5 @@
 import React from 'react';
-import './Trymore.css';
+// import './Trymore.css';
 const Trymore = () => {
     return (
         <section className="t-main">
