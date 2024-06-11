@@ -244,6 +244,7 @@
     padding-inline: 0.52rem;
     outline: none;
     border: none;
+    cursor: pointer;
 }
 
 .vector {
