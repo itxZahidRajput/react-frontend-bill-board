@@ -1,0 +1,144 @@
+:root {
+    --main-color: #FFB101; 
+    --font-family: 'Poppins', sans-serif;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+  }
+
+  .section_main{
+margin-left: calc(100% - 1390px);
+    position: relative;
+    width: 1390px;
+    height: 615px;
+  }
+  .image1{
+    position: absolute;
+    width: 806px;
+    height: 615px;
+    right: 0px;
+    opacity: 0.8 ;
+    z-index: -3;
+  }
+.image2{
+    position: absolute;
+    width:  1390px;
+    height: 615px;
+    left: 0px;
+    z-index: -2;
+}
+.image3{
+    position: absolute;
+    width: 656px;
+    height:555px;
+    left: 0px;
+    z-index: -1;
+}
+.catagry-m{
+    margin-top: 60px;
+    position: absolute;
+    left:0px;
+    top: 0px;
+}
+.bollboard{
+    color: var(--main-color);
+}
+.main_heading{
+font-size: 45px;
+
+}
+text{
+    font-size: 20px;
+    color: #000000;
+}
+.catagry-m{
+    display: flex;
+    flex-direction: column;
+}
+.main_small{
+   
+    display: flex;
+    flex-direction: column;
+   
+}
+.catagory{
+    font-size: 16px;
+    color: #000000;
+
+}
+.catagory_p{
+    font-size: 10px;
+    color: #000000;
+}
+.cat-card{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+}
+.cat-head{
+    margin-bottom: 80px;
+}
+.inner{
+    width: 69px;
+    border-radius: 41px;
+    background-color:var(--main-color) ;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center ;
+    margin-left: 6px;
+   
+}
+.vector{
+    width: 8px !important;
+    height: 5px !important;
+
+}
+.secsmall{
+    margin-right: 9px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    min-width:  195px;
+    height: 62px;
+    padding: 14px;
+    border-radius: 86px;
+}
+.inner>img{
+    width: 13px;
+    height: 13px;
+}
+.row_items{
+    width: 480px;
+    height: 23px;
+    display: flex;
+    margin-bottom: 60px;
+    flex-direction:row ;
+}
+.items{
+    min-width: 62px;
+    height: 23px;
+    margin-left: 7px;
+    font-size: 13px;
+    border-radius: 71px;
+    border: 1px solid #777777;
+    color: #777777;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.para{
+    width: 512px;
+    font-size: 14px;
+    color: #777777;
+}
+.pop{
+    font-size: 15px;
+}
