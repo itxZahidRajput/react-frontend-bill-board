@@ -193,7 +193,7 @@
 }
 
 .text {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #000000;
 }
 
@@ -214,7 +214,7 @@
 }
 
 .catagory_p {
-    font-size: 1rem;
+    font-size: 0.7rem;
     color: #000000;
 }
 
@@ -255,7 +255,7 @@
     margin-right: 0.47rem;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     box-shadow: 0px 0.21rem 0.42rem rgba(0, 0, 0, 0.2);
     min-width: 10.16rem;
