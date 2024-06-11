@@ -9,6 +9,8 @@ export default function Navbar() {
 
     return (
         <nav className="navbar">
+            <a className={`nav_link ${isMenuOpen ? 'open' : ''}`} href="/">     <img  className="nav_logo" src="footer_img.png"></img></a>
+       
             <div className="menu-icon" onClick={toggleMenu}>
                 <span role="img" aria-label="Menu">☰</span>
             </div>
