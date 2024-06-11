@@ -17,7 +17,7 @@ function App() {
         <Section />
         <Category />
         <Selections />
-        <Destination />  
+        <Destination />
         <Trymore />
         <Testmonials />
 

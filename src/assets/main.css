@@ -11,6 +11,8 @@
     --gap: 1rem;
     --padding-inline: 5rem;
     --padding-block: 2rem;
+    --base-font-size: 1rem;
+    --base-line-height: 1.5;
 }
 
 * {
@@ -18,6 +20,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-family);
+    font-size: var(--base-font-size);
+    line-height: var(--base-line-height);
 }
 
 a {
@@ -37,11 +41,11 @@ a {
     background-color: var(--light-color);
     color: #fff;
 }
-.nav_logo{
+
+.nav_logo {
     width: 3rem;
     margin-left: 1rem;
-    height:auto;
-    
+    height: auto;
 }
 
 .menu-icon {
@@ -83,10 +87,11 @@ a {
     .menu-icon {
         display: block;
     }
-  
-.nav_link{
-    display: none;
-}
+
+    .nav_link {
+        display: none;
+    }
+
     .navigation {
         display: flex;
         flex-direction: column;
@@ -114,7 +119,6 @@ a {
         width: 100%;
     }
 }
-
 
 /* Category Section */
 
@@ -370,7 +374,6 @@ a {
     }
 }
 
-
 /* Testimonial Section */
 
 .testimonial {
@@ -474,5 +477,63 @@ a {
 
     .testimonial-client {
         margin-top: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    :root {
+        --base-font-size: 0.9375rem;
+    }
+
+    .category-title h3,
+    .selection-title h3,
+    .testimonial-title {
+        font-size: 1.875rem;
+    }
+
+    .category-title p,
+    .selection-header p,
+    .selection-header a,
+    .testimonial-card-content {
+        font-size: 1.125rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --base-font-size: 0.875rem;
+    }
+
+    .category-title h3,
+    .selection-title h3,
+    .testimonial-title {
+        font-size: 1.625rem;
+    }
+
+    .category-title p,
+    .selection-header p,
+    .selection-header a,
+    .testimonial-card-content {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    :root {
+        --base-font-size: 0.8125rem;
+    }
+
+    .category-title h3,
+    .selection-title h3,
+    .testimonial-title {
+        font-size: 1.375rem;
+    }
+
+    .category-title p,
+    .selection-header p,
+    .selection-header a,
+    .testimonial-card-content {
+        font-size: 0.875rem;
     }
 }
