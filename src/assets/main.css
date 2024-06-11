@@ -31,10 +31,17 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
     padding: 1rem;
     height: 5rem;
     background-color: var(--light-color);
     color: #fff;
+}
+.nav_logo{
+    width: 3rem;
+    margin-left: 1rem;
+    height:auto;
+    
 }
 
 .menu-icon {
@@ -76,7 +83,10 @@ a {
     .menu-icon {
         display: block;
     }
-
+  
+.nav_link{
+    display: none;
+}
     .navigation {
         display: flex;
         flex-direction: column;
@@ -95,6 +105,7 @@ a {
 
     .navigation.open {
         max-height: 350px;
+        z-index: 12;
     }
 
     .navigation a {
