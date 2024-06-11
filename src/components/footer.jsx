@@ -1,14 +1,11 @@
 import React from 'react';
 
-
-import './footer.css';
-
 const Footer = () => {
     return (
         <footer className="footer">
             <div className='over_flower'>
-                <span>Let's do it! —
-                </span>
+                <input placeholder="Let's do it! —" />
+
                 <button className='btn'>
                     Learn More
                 </button>

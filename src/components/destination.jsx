@@ -1,5 +1,5 @@
 import React from 'react';
-import './destination.css';
+// import './destination.css';
 export default function Destination() {
     return (
         <section className='sooter_section'>
@@ -27,7 +27,7 @@ export default function Destination() {
                         <img className="image_d" src="d-3.jpg" alt="" />
                     </div>
                     <h1 className='image_heading'>
-                    Pole Billboard
+                        Pole Billboard
                     </h1>
                 </div>
                 <div className='images_sec'>
@@ -35,7 +35,7 @@ export default function Destination() {
                         <img className="image_d" src="d-2.jpg" alt="" />
                     </div>
                     <h1 className='image_heading'>
-                    Street Billboard
+                        Street Billboard
                     </h1>
                 </div>
                 <div className='images_sec'>
@@ -43,7 +43,7 @@ export default function Destination() {
                         <img className="image_d" src="d-1.jpg" alt="" />
                     </div>
                     <h1 className='image_heading'>
-                    Road Billboard
+                        Road Billboard
                     </h1>
                 </div>
             </div>

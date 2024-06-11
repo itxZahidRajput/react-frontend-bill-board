@@ -1,15 +1,14 @@
 import React from 'react'
-import './section.css'
 
 function Section() {
     return (
         <section className="section_main">
-            <img className='image1' src="bg-main.jpg"  />
-            <img className='image2' src="w-bg.png"  />
-            <img className='image3' src="Busan.png"  />
+            <img className='image1' src="bg-main.jpg" />
+            <img className='image2' src="w-bg.png" />
+            <img className='image3' src="Busan.png" />
             <div className="catagry-m">
                 <div className='cat-head'>
-                    <h1 className='main_heading'>Find Your <span className="bollboard">Billboard</span></h1>
+                    <h1 className='main_heading'>Find Your <span className="billboard">Billboard</span></h1>
                     <p className="text">Find and book unique Billboard on Rentals</p>
                 </div>
 
@@ -30,9 +29,12 @@ function Section() {
                             <p className='catagory_p'> 24 hours</p>
 
                         </div>
-                        <div className='inner'>
-                            <span>Month</span>
-                            <img className='vector' src="Vector.png" alt="" />
+                        <div>
+                            <select className='inner' name="month" id="month">
+                                <option value="week">Week</option>
+                                <option value="month">Month</option>
+                                <option value="year">Year</option>
+                            </select>
                         </div>
                     </div>
                     <div className='secsmall'>
@@ -51,18 +53,18 @@ function Section() {
                 </div>
                 <div className='row_items'>
                     <h1 className='pop'>Popular searches:</h1>
-                    <div className='items'>
+                    <a href='#' className='items'>
                         price
-                    </div>
-                    <div className='items'>
+                    </a>
+                    <a href='#' className='items'>
                         Location
-                    </div>
-                    <div className='items'>
+                    </a>
+                    <a href='#' className='items'>
                         Model
-                    </div>
-                    <div className='items'>
+                    </a>
+                    <a href='#' className='items'>
                         Model Year
-                    </div>
+                    </a>
                 </div>
                 <div className='para'>
                     <p>
