@@ -2,10 +2,8 @@
     --font-family: 'Poppins', sans-serif;
     --main-color: #FFB101;
     --primary-color: #002459;
-    /* Assuming you want this primary color for other elements */
 }
 
-/* Universal styles */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +11,6 @@
     font-family: var(--font-family);
 }
 
-/* Destination Section  */
 .image_box {
     width: 290px;
     height: 320px;
@@ -30,7 +27,6 @@
 .image_box {
     width: 100%;
     padding-bottom: 110%;
-    /* Aspect ratio: 10/9 */
     position: relative;
     border-radius: 1.51vw;
 }
@@ -149,6 +145,7 @@
 }
 
 /* Hero Section  */
+
 .section_main {
     margin-left: calc(100% - 72.4rem);
     position: relative;
@@ -306,6 +303,8 @@
 
 .billboard {
     color: var(--main-color);
+    font-size: 3rem;
+    line-height: 1.2;
 }
 
 @media (max-width: 1200px) {
@@ -479,208 +478,3 @@
     }
 }
 
-/* Footer Section */
-.footer {
-    position: relative;
-    background-color: #172121;
-    color: #ffffff;
-    padding: 40px 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin-top: 5rem;
-}
-
-.footer img {
-    margin-bottom: 20px;
-}
-
-.footer h3 {
-    margin-bottom: 15px;
-}
-
-.footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer ul li {
-    margin-bottom: 10px;
-}
-
-.footer ul li a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.footer .social-icons {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-.footer .social-icons a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.footer .subscribe {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.footer .subscribe input[type="email"] {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 5px;
-}
-
-.footer .subscribe input[type="submit"] {
-    background-color: #ff0000;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.footer .bottom-links {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding-top: 20px;
-    border-top: 3px solid #777777;
-    margin-top: 20px;
-}
-
-.footer .bottom-links a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-.footer .bottom-links a:hover {
-    text-decoration: underline;
-}
-
-.footer .copyright {
-    text-align: right;
-}
-
-.fab {
-    font-size: 20px;
-    color: #ffffff;
-}
-
-.s-icons {
-    margin-top: 0px;
-    display: flex;
-    flex-direction: row;
-}
-
-.social-icons {
-    display: flex;
-    flex-direction: column;
-}
-
-.s-icons>a {
-    margin-right: 10px;
-}
-
-.subs {
-    margin-left: 13px;
-}
-
-.pera {
-    width: 330px;
-    margin-bottom: 9px;
-}
-
-.over_flower {
-    position: absolute;
-    top: -60px;
-    right: 23%;
-    background-color: #fff;
-    padding: 33px;
-    width: 800px;
-    border-radius: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25) inset, 3px 3px 9px 2px rgba(77, 77, 77, 0.20);
-    height: 80px;
-}
-
-.over_flower>input {
-    width: 500px;
-    height: 40px;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    outline-color: var(--main-color);
-}
-
-.over_flower>span {
-    font-size: 20px;
-    color: #172121;
-}
-
-.btn {
-    width: 150px;
-    height: 40px;
-    background-color: var(--main-color);
-    color: #ffffff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer>div {
-        margin-bottom: 30px;
-    }
-
-    .over_flower {
-        width: 90%;
-        right: auto;
-        height: 60px;
-        left: 5%;
-        margin-top: 20px;
-        padding: 15px;
-        border-radius: 10px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .over_flower>input {
-        width: 100%;
-        height: 30px;
-    }
-
-    .subscribe {
-        margin-top: 20px;
-    }
-
-    .social-icons {
-        flex-direction: row;
-    }
-
-    .bottom-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .btn {
-        display: none;
-    }
-}

@@ -11,7 +11,7 @@ const Footer = () => {
                 </button>
             </div>
             <div>
-                <img src="footer_img.png" alt="Billboard Ad" />
+                <img src="/footer_img.png" alt="Billboard Ad" />
             </div>
             <div>
                 <h3>Resources</h3>
@@ -62,7 +62,7 @@ const Footer = () => {
                     <a href="#">Site Map</a>
                 </div>
                 <div className="copyright">
-                    &copy; 2021 All Rights Reserved
+                    &copy; 2024 All Rights Reserved
                 </div>
             </div>
         </footer>
