@@ -1,8 +1,6 @@
 import React from "react";
 import { useState } from "react"
 import Breadcrumbs from "./layouts/Breadcrumbs";
-import Navbar from './layouts/Navbar';
-import Footer from './layouts/Footer';
 import "../assets/product-details.css";
 
 export default function ProductDetail() {
@@ -116,33 +114,33 @@ export default function ProductDetail() {
     ]
 
     const relatedProductsElement = relatedProducts.map((item, index) => (
-        <div class="card">
-            <img src={item.image} alt="Billboard" class="card-image" />
-            <div class="card-content">
-                <h3 class="card-title">{item.title}</h3>
-                <div class="card-details">
-                    <div class="detail-item">
-                        <img src="/img12.png" alt="Duration" class="detail-icon" />
-                        <span class="card-key">Duration</span>
-                        <span class="card-props">{item.duration}</span>
+        <div key={index} className="card">
+            <img src={item.image} alt="Billboard" className="card-image" />
+            <div className="card-content">
+                <h3 className="card-title">{item.title}</h3>
+                <div className="card-details">
+                    <div className="detail-item">
+                        <img src="/img12.png" alt="Duration" className="detail-icon" />
+                        <span className="card-key">Duration</span>
+                        <span className="card-props">{item.duration}</span>
                     </div>
-                    <div class="detail-item">
-                        <img src="/img13.png" alt="View" class="detail-icon" />
-                        <span class="card-key">View</span>
-                        <span class="card-props">{item.view}</span>
+                    <div className="detail-item">
+                        <img src="/img13.png" alt="View" className="detail-icon" />
+                        <span className="card-key">View</span>
+                        <span className="card-props">{item.view}</span>
                     </div>
-                    <div class="detail-item">
-                        <img src="/img14.png" alt="Size" class="detail-icon" />
-                        <span class="card-key">Size</span>
-                        <span class="card-props">{item.size}</span>
+                    <div className="detail-item">
+                        <img src="/img14.png" alt="Size" className="detail-icon" />
+                        <span className="card-key">Size</span>
+                        <span className="card-props">{item.size}</span>
                     </div>
-                    <div class="detail-item">
-                        <img src="/img15.png" alt="Location" class="detail-icon" />
-                        <span class="card-key">{item.location}</span>
+                    <div className="detail-item">
+                        <img src="/img15.png" alt="Location" className="detail-icon" />
+                        <span className="card-key">{item.location}</span>
                     </div>
-                    <div class="detail-item item-price">
-                        <span class="updated">{item.updated}</span>
-                        <span class="card-price">PKR{item.price}</span>
+                    <div className="detail-item item-price">
+                        <span className="updated">{item.updated}</span>
+                        <span className="card-price">PKR{item.price}</span>
                     </div>
                 </div>
             </div>
@@ -168,7 +166,7 @@ export default function ProductDetail() {
 
     return (
         <>
-            <Breadcrumbs name="Detail Page" />
+            <Breadcrumbs  name="Detail Page" />
             <main>
                 <div className="container">
                     <div className="main-content">
@@ -336,9 +334,9 @@ export default function ProductDetail() {
                     />
                 </div>
 
-                <div class="similar">
+                <div className="similar">
                     <h2>Similar Bill Board</h2>
-                    <div class="similar-card-block">
+                    <div className="similar-card-block">
 
                         {relatedProductsElement}
 
