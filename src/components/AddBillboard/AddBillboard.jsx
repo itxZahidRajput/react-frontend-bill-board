@@ -187,9 +187,10 @@ export default function AddBillboard() {
 
     return (
         <>
-            <Breadcrumbs name="Add Billboard" />
 
-            <main>
+            <Breadcrumbs name="Add Billboard" />
+            <main className="container">
+
                 <div>
                     <form onSubmit={handleSubmit}>
 
@@ -365,7 +366,7 @@ export default function AddBillboard() {
                                     <div className="select-container">
                                         <select name="time.durationUnit" onChange={handleChange} id="timeUnit">
                                             <option value="hours" selected>Hours</option>
-                                            <option value="days">Days</option>
+                                            <option value="days" >Days</option>
                                             <option value="weeks">Weeks</option>
                                         </select>
                                     </div>
