@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import Breadcrumbs from "../layouts/Breadcrumbs";
-import './billboard.css';
+import React, { useState, useEffect } from "react"
+import Breadcrumbs from "../layouts/Breadcrumbs"
+import './billboard.css'
 
 export default function AddBillboard() {
     const [billboard, setBillboard] = useState({
@@ -28,39 +28,39 @@ export default function AddBillboard() {
 
         features: [],
         terms: [],
-    });
+    })
 
 
-    const [isFormValid, setIsFormValid] = useState(false);
+    const [isFormValid, setIsFormValid] = useState(false)
 
     const validateForm = () => {
         const {
             description, price, image, category, size, city, time, features, terms
-        } = billboard;
+        } = billboard
 
         if (
-            description && price && image.length && category && size.width && size.height && size.groundHeight &&
+            description && price && image[0] && category && size.width && size.height && size.groundHeight &&
             city && time && features.length && terms.length
         ) {
-            setIsFormValid(true);
+            setIsFormValid(true)
         } else {
-            setIsFormValid(false);
+            setIsFormValid(false)
         }
-    };
+    }
 
     const handleChange = (e) => {
-        const { name, value, type, files } = e.target;
+        const { name, value, type, files } = e.target
         if (type === "file") {
-            const file = files[0];
+            const file = files[0]
             if (file) {
-                const imageUrl = URL.createObjectURL(file);
+                const imageUrl = URL.createObjectURL(file)
                 setBillboard((prev) => ({
                     ...prev,
                     [name]: [...prev[name], imageUrl],
-                }));
+                }))
             }
         } else {
-            const [mainKey, subKey] = name.split('.');
+            const [mainKey, subKey] = name.split('.')
             if (subKey) {
                 setBillboard({
                     ...billboard,
@@ -68,50 +68,50 @@ export default function AddBillboard() {
                         ...billboard[mainKey],
                         [subKey]: value,
                     },
-                });
+                })
             } else {
                 setBillboard({
                     ...billboard,
                     [name]: value,
-                });
+                })
             }
         }
-    };
+    }
 
     useEffect(() => {
-        validateForm();
+        validateForm()
         const submitButton = document.getElementById("submit")
         if (isFormValid) {
-            submitButton.disabled = false;
-            submitButton.classList.remove("disabled");
+            submitButton.disabled = false
+            submitButton.classList.remove("disabled")
         }
         return () => {
-            billboard.image.forEach(img => URL.revokeObjectURL(img));
-        };
-    }, [billboard, isFormValid]);
+            billboard.image.forEach(img => URL.revokeObjectURL(img))
+        }
+    }, [billboard, isFormValid])
 
     const handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault()
         if (isFormValid) {
             alert("Form Submitted")
         } else {
-            alert("Please fill all the fields");
+            alert("Please fill all the fields")
         }
-    };
+    }
 
     const handleCategorySelect = (category) => {
         setBillboard({
             ...billboard,
             category,
-        });
-    };
+        })
+    }
 
     const handleCitySelect = (city) => {
         setBillboard({
             ...billboard,
             city,
-        });
-    };
+        })
+    }
 
     const handleFeatureSelect = (feature) => {
         setBillboard((prev) => ({
@@ -119,8 +119,8 @@ export default function AddBillboard() {
             features: prev.features.includes(feature)
                 ? prev.features.filter(f => f !== feature)
                 : [...prev.features, feature],
-        }));
-    };
+        }))
+    }
 
     const categories = [
         { img: "img1.png", title: "Mobile Billboards" },
@@ -133,22 +133,21 @@ export default function AddBillboard() {
         { img: "img8.png", title: "Bus Shelters" },
         { img: "img9.png", title: "Street Billboards" },
         { img: "img10.png", title: "360 Billboards" }
-    ];
-
+    ]
     const categoryElements = categories.map((category, index) => (
         <div key={index} className={`category-card ${billboard.category === category.title ? 'category-selected' : ''}`} onClick={() => handleCategorySelect(category.title)}>
             <img src={category.img} alt={category.title} />
             <p>{category.title}</p>
         </div>
-    ));
+    ))
 
-    const cities = ["Okara", "Lahore", "Karachi", "Faisalabad", "Islamabad", "Multan", "Sialkot"];
+    const cities = ["Okara", "Lahore", "Karachi", "Faisalabad", "Islamabad", "Multan", "Sialkot"]
 
     const cityElements = cities.map((city, index) => (
         <button type="button" key={index} className={`city-card ${billboard.city === city ? 'city-selected' : ''}`} onClick={() => handleCitySelect(city)}>
             {city}
         </button>
-    ));
+    ))
 
     const features = [
         { img: "img1.png", title: "Side Light" },
@@ -161,29 +160,29 @@ export default function AddBillboard() {
         { img: "img8.png", title: "Posting Services 2" },
         { img: "img9.png", title: "Posting Services 3" },
         { img: "img10.png", title: "Posting Services 4" }
-    ];
+    ]
 
     const featureElements = features.map((feature, index) => (
         <div key={index} className={`category-card ${billboard.features.includes(feature.title) ? 'features-selected' : ''}`} onClick={() => handleFeatureSelect(feature.title)}>
             <img src={feature.img} alt={feature.title} />
             <p>{feature.title}</p>
         </div>
-    ));
+    ))
 
     const handleImageUpload = (index, event) => {
-        const file = event.target.files[0];
+        const file = event.target.files[0]
         if (file) {
-            const imageUrl = URL.createObjectURL(file);
+            const imageUrl = URL.createObjectURL(file)
             setBillboard((prev) => {
-                const newImages = [...prev.image];
-                newImages[index] = imageUrl;
+                const newImages = [...prev.image]
+                newImages[index] = imageUrl
                 return {
                     ...prev,
                     image: newImages,
-                };
-            });
+                }
+            })
         }
-    };
+    }
 
     return (
         <>
@@ -469,5 +468,5 @@ export default function AddBillboard() {
                 </div>
             </main>
         </>
-    );
+    )
 }
